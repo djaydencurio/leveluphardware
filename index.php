@@ -12,14 +12,10 @@
 </head>
 
 <body>
-    <header>
-        <img class="img-nav" src="img/logo.png" alt="">
-        <nav class="nav-naar-rechts">
-            <a href="index.html">Home</a>
-            <a href="overons.html">Over ons</a>
-            <a href="producten.html">Producten</a>
-        </nav>
-    </header>
+    <?php
+    require_once("header.php");
+    ?>
+
     <h1>High-end Gaming Gear</h1>
     <h2>In Breda</h2>
     <div class="laptop-met-tekst-naar-rechts">
@@ -45,14 +41,14 @@
     </div>
     <div class="knop-iframe-onder-elkaar">
         <button class="knop">schrijf je in voor de niewsbrief</button>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.9116406085504!2d4.775679426476197!3d51.606507571836026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c69f986217e23f%3A0xd8156b2ba651220!2sTerheijdenseweg%20350%2C%204826%20AA%20Breda!5e0!3m2!1snl!2snl!4v1789731680708!5m2!1snl!2snl"
-            width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <?php
+
+        require_once("iframe.php")
+            ?>
     </div>
-    <footer>
-        <p class="footer-kleur-groen">&copy; Djayden 2026</p>
-    </footer>
+    <?php
+    require_once("footer.php");
+    ?>
 </body>
 
 </html>
